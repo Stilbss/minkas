@@ -1,0 +1,13 @@
+# Projekts "Minka"
+
+*Mūsu pirmais objektorientētais projekts.Projekts tiks versonēts ar git un izvietots GitHub*
+
+![Minka foto](https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fpngtree.com%2Fso%2Fsurprised-cat&ved=0CBYQjRxqFwoTCOjG2o2roJQDFQAAAAAdAAAAABAo&opi=89978449)
+
+**Darāmo darbu saraksts:**
+-[] izveidot klasi "Minka"
+-[]Izveidot klasei "MinkuTante"
+-[]Izveidot klasi "DarbsArFailu"
+-[]Versionet visu izstrades procesu
+-[]Izvietot projektu GitHub
+-[]Sagatavot projekta .jar failu
