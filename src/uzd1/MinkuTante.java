@@ -145,13 +145,19 @@ public class MinkuTante {
 				
 				break;
 				
-			//case :
+			case "Saglabāt failā":
+				DarbsArFailu.saglabat(runcis, fNosaukums);
 				
-			//	break;
+				break;
 				
-			//case :
+			case "Apskatīt saglabato kaķus":
+				DarbsArFailu.nolasit(fNosaukums);
 				
-				//break;
+				break;
+				
+			case "Aizvērt":
+				JOptionPane.showMessageDialog(null, "Programma apturēta!","Informācija",JOptionPane.INFORMATION_MESSAGE);
+				break;
 			}
 			
 			
