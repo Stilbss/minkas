@@ -109,11 +109,11 @@ public class Minka {
 	void medit() {
 		if((rand.nextInt(3))==0) {
 			medijumuSk++;
-			bilde= iestatitBildi("ai-generated-napoleon-cat-isolated-on-background-png.png");
+			bilde= iestatitBildi("valdis.png");
 			JOptionPane.showMessageDialog(null, "Medijums tika noķerts!", "Veiksme",JOptionPane.INFORMATION_MESSAGE,bilde);
 			
 		}else {
-			bilde=iestatitBildi("3-2-cat-png-14.png");
+			bilde=iestatitBildi("valdis.png");
 			JOptionPane.showMessageDialog(null, "Medijums aizlaidies!","Neveiksme",JOptionPane.INFORMATION_MESSAGE,bilde);
 		}
 	}

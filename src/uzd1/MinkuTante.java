@@ -85,16 +85,65 @@ public class MinkuTante {
 				break;
 			
 			siksnina = (poga ==0)? true:false;
-			cels = virknesParbaude("Ievadi bildes nosaukumu","images.jpeg");
+			cels = virknesParbaude("Ievadi bildes nosaukumu","images");
 			//izsaucu konstruktoru
 			runcis= new Minka(minkasVards,skirne,spalvasKrasa, saimnieks, dzGads, siksnina, cels);
-			
 			break;
 			
-			//case :
+			case "Izsaukt metodi":
+				if(runcis != null) {
+					String[]metodes= {
+							"Paglaudīt","Nolasīt atribūtus","Pabarot"
+							,"Nolikt gulēt","Palielināt vecumu", "Apskatīt vecumu"
+							, "Medīt"};
+					String m = (String)JOptionPane.showInputDialog(null,"Izvēlies metodi", "Metodes izvēle"
+							, JOptionPane.QUESTION_MESSAGE, null, metodes, metodes[0]);
+					if(m==null)
+						break;
+					
+					switch(m) {
+					case "Paglaudīt":
+						runcis.murrat();
+						break;
+						
+					case "Nolasīt atribūtus":
+						JOptionPane.showMessageDialog(null, runcis.nolasitAtributus(),"informacijas"
+								, JOptionPane.INFORMATION_MESSAGE);
+						break;
+						
+					case "Pabarot":
+						String atb = runcis.pabarot(
+								virknesParbaude("Ar ko pabarot kaķi?", "Zivs"));
+						JOptionPane.showMessageDialog(null, "Kaķis atgriež "+atb,"Informacijas"
+								, JOptionPane.INFORMATION_MESSAGE);
+						
+					case "Nolikt gulēt":
+						String prieksmets = virknesParbaude("Ko dosi kaķim uz gultu?", "Spilvens");
+						if(prieksmets == null || prieksmets.isEmpty())
+							runcis.gulet();
+						else
+							runcis.gulet(prieksmets);
+						break;
+						
+					case "Palielināt vecumu":
+						runcis.palielinatVecumu();
+						break;
+						
+					case "Apskatīt vecumu":
+						runcis.nolasitVecumu();
+						break;
+						
+					case "Medīt":
+						runcis.medit();
+						break;
+					}
+					
+					
+				}else
+					JOptionPane.showMessageDialog(null, "Vispirms izveido kaķi!", "Kļūme"
+							, JOptionPane.ERROR_MESSAGE);
 				
-				
-			//	break;
+				break;
 				
 			//case :
 				
@@ -114,7 +163,7 @@ public class MinkuTante {
 	
 	
 	
-	
+
 	}
 
 }
