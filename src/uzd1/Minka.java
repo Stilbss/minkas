@@ -54,8 +54,8 @@ public class Minka {
 			JOptionPane.showMessageDialog(null, vards + "saka 'murr murr murr'", "Paziņojums", JOptionPane.PLAIN_MESSAGE, bilde);
 		}
 	String nolasitAtributus() {
-		return vards + "ir"+ vecums+ "gadus vecs"+ skirne+"šķirnes kaķis"+spalvasKrasa+"krāsas kažoku."
-				+"\nKaķim "+((siksnina)?"ir":"nav") + "siksniņa"
+		return vards + " ir "+ vecums+ " gadus vecs "+ skirne+" šķirnes kaķis "+spalvasKrasa+" krāsas kažoku."
+				+"\nKaķim "+((siksnina)?" ir ":" nav ") + " siksniņa "
 				+"\nKaķa saimnieks ir "+ saimnieks 
 				+"\n Medijumu skaits: "+ medijumuSk;
 	}
@@ -63,7 +63,7 @@ public class Minka {
 	String pabarot(String ediens) {
 		if(izsalkums>0) {
 			bilde = iestatitBildi("cat-png-17.png");
-			JOptionPane.showMessageDialog(null, "Ņam ņam, garšo"+ ediens,"Informacijas",JOptionPane.INFORMATION_MESSAGE,bilde);
+			JOptionPane.showMessageDialog(null, "Ņam ņam, garšo "+ ediens,"Informacijas",JOptionPane.INFORMATION_MESSAGE,bilde);
 			ediens ="Tukša bļoda";
 			izsalkums--;
 		} else {
@@ -81,7 +81,7 @@ public class Minka {
 	
 	void gulet(String prieksmets) {
 		if(prieksmets.equalsIgnoreCase("sedziņa")) {
-			bilde = iestatitBildi("images.jpeg");
+			bilde = iestatitBildi("valdis.png");
 			JOptionPane.showMessageDialog(null, "Zzzzz...","Informācijas", JOptionPane.INFORMATION_MESSAGE);
 			
 		}else {
@@ -101,7 +101,7 @@ public class Minka {
 	}
 	
 	void nolasitVecumu() {
-		JOptionPane.showMessageDialog(null, vards+"ir"+ vecums+" vecs","informacijas",JOptionPane.INFORMATION_MESSAGE);
+		JOptionPane.showMessageDialog(null, vards+" ir "+ vecums+" vecs","informacijas",JOptionPane.INFORMATION_MESSAGE);
 		
 	}
 	
