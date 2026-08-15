@@ -88,16 +88,22 @@ public class Minka {
 			JOptionPane.showMessageDialog(null, saimnieks+"! "+prieksmets+ " man neder gulēšanai!", "Kļūda", JOptionPane.ERROR_MESSAGE);
 		}
 	}
-	
-	void palielinatVecumu() {
+	//veikta refaktaresana
+	int palielinatVecumu() {
 		if(vecums<20) {
 			vecums++;
 			bilde=iestatitBildi("canva-british-shorthair-kitten-sitting,-head-tilted,-looking-curious-MAG_0kV15eY.png");
 			JOptionPane.showMessageDialog(null, vards+" vecums palielinās par vienu gadu!", "informācijas", JOptionPane.WARNING_MESSAGE);
 			
-		}else {
+		}else 
 			JOptionPane.showMessageDialog(null, "Sasniegts max vecums!","Brīdinājums",JOptionPane.WARNING_MESSAGE);
-		}
+		
+		return vecums;
+		
+	}
+	
+	public String apskatitVardu() {
+		return vards;
 	}
 	
 	void nolasitVecumu() {
